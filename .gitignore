@@ -1,0 +1,9 @@
+
+.htaccess
+config/*
+modules/*
+public/*
+templates/*
+LICENSE
+license.txt
+README.md
