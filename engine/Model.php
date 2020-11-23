@@ -101,7 +101,22 @@ class Model {
         return $sql;
 
     }
-
+    
+    /**
+     * Trongate function > get()
+     * 
+     * `$data['rows'] = $this->model->get();`
+     * 
+     * above example will return all rows reading table name from the URL Segment 1
+     * 
+     * @param string $order_by [optional] default `id`
+     * @param string $target_tbl [optional] target table name - default module name
+     * @param int $limit [optional] number of rows 
+     * @param int $offset [optional] row starting from (if you put offset 0 it starts from row 1)
+     * 
+     * @return array an Array of rows
+     * @link see more details and examples at https://trongate.io
+     */
     public function get($order_by=NULL, $target_tbl=NULL, $limit=NULL, $offset=NULL) {
 
         $limit_results = false;
