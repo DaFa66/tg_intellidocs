@@ -101,9 +101,9 @@ class Model {
         return $sql;
 
     }
-    
+
     /**
-     * Trongate function > get()
+     * get rows from database
      * 
      * `$data['rows'] = $this->model->get();`
      * 
@@ -159,7 +159,6 @@ class Model {
         return $query;
 
     }
-
 
     public function get_where_custom($column, $value, $operator='=', $order_by='id', $target_tbl=NULL, $limit=NULL, $offset=NULL) {
 
